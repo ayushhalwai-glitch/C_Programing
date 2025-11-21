@@ -1,0 +1,36 @@
+/*
+name  :  ayush ashok halwai
+div  :  F
+roll no.  :  29
+UIN  :  251M032
+BRANCH  :  MECHANCIAL
+*/
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum;
+    int *ptr1, *ptr2;
+
+    // Input two numbers
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Assign addresses to pointers
+    ptr1 = &num1;
+    ptr2 = &num2;
+
+    // Add values using pointers
+    sum = *ptr1 + *ptr2;
+
+    // Output result
+    printf("Sum of %d and %d is: %d\n", *ptr1, *ptr2, sum);
+
+    return 0;
+}
